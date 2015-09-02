@@ -4,12 +4,13 @@ git commit -m
 git log
 git log --pretty==oneline
 git 
-git checkout -- 
+git checkout --  放弃，返回上一步操作
 git reset HEAD 
 rm
 git rm
 git remote add origin git@github.com:chenxinzzu/learngit.git
 git push -u origin master
 git push origin master 
-
+git clone git@github.com:chenxinzzu/gitskills.git 从远程克隆仓库
+git checkout -b newbranch 添加新的分支，newbranch
 可以写中文
