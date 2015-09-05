@@ -3,7 +3,7 @@ git add
 git commit -m
 git log
 git log --pretty==oneline
-git 
+git diff readme.txt #查看不同
 git checkout --  放弃，返回上一步操作
 git reset HEAD 
 rm
@@ -37,6 +37,17 @@ git remote -v #显示更详细的信息
 git checkout -b dev origin/dev #创建远程origin的dev分支到本地,在本地创建和远程分支对应的分支
 git branch --set-upstream-to=origin/dev dev #建立本地分支和远程分支的关联
 git pull #从远程分支抓取，如果有冲突，要先处理冲突。
+
+
+git tag V1.0 #创建标签
+git tag -a v1.0 -m "commets" #指定标签信息
+git tag -s v1.0 -m "commets" #可以用PGP签名标签；
+git tag #查看所有标签
+git show v1.0 #查看标签v1.0
+git tag -d v1.0 #删除标签v1.0
+git push tag origin v1.0 #标签推送到远程
+git push origin --tags #推送所有标签
+git push origin :/refs/tags/v1.0 #删除远程标签
 
 
 
