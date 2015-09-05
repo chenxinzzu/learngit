@@ -21,5 +21,14 @@ git checkout dev #切换分支
 git checkout -b dev #创建+切换分支
 git merge master #合并某分支到当前分支
 git branch -d dev #删除分支
+git merge --no-ff -m "merge with no-ff" dev #准备合并分支， --no-ff 参数，表示禁用fast-forward，fast-forward
+看不出做过合并。
+
+git log --graph --pretty=oneline --abbrev-commit #查看历史分支
+git stash #保存工作现场
+git stash list #查看工作现场
+git stash apply #恢复工作现场
+git stash drop #删除stash内容
+git stash pop #恢复现场并删除stash
 
 可以写中文
