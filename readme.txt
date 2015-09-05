@@ -5,9 +5,3 @@ Git tracks changes.
 Git tracks changes of files.
 Create a new branch is quick。
 Creating a new branch is quick and simple. 
-<<<<<<< HEAD
-
-修改--master
-=======
-修改----dev
->>>>>>> dev
